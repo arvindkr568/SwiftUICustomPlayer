@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A479B89225ADDBE900385B69 /* TabViewSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A479B89125ADDBE900385B69 /* TabViewSwiftUIView.swift */; };
 		A497A7A225ADC481002608BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497A7A125ADC481002608BE /* AppDelegate.swift */; };
 		A497A7A425ADC481002608BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497A7A325ADC481002608BE /* SceneDelegate.swift */; };
 		A497A7A625ADC481002608BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497A7A525ADC481002608BE /* ContentView.swift */; };
@@ -15,6 +16,10 @@
 		A497A7AE25ADC483002608BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A497A7AC25ADC483002608BE /* LaunchScreen.storyboard */; };
 		A497A7B925ADC483002608BE /* SwiftUICustomPlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497A7B825ADC483002608BE /* SwiftUICustomPlayerTests.swift */; };
 		A497A7C425ADC483002608BE /* SwiftUICustomPlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497A7C325ADC483002608BE /* SwiftUICustomPlayerUITests.swift */; };
+		A497A7D625ADC7DA002608BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497A7D425ADC7DA002608BE /* ViewController.swift */; };
+		A497A7D725ADC7DA002608BE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A497A7D525ADC7DA002608BE /* ViewController.xib */; };
+		A497A7DF25ADC8F7002608BE /* HomeSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497A7DE25ADC8F7002608BE /* HomeSwiftUIView.swift */; };
+		A497A7E425ADC914002608BE /* MoreSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497A7E325ADC914002608BE /* MoreSwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A479B89125ADDBE900385B69 /* TabViewSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewSwiftUIView.swift; sourceTree = "<group>"; };
 		A497A79E25ADC481002608BE /* SwiftUICustomPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICustomPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A497A7A125ADC481002608BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A497A7A325ADC481002608BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,10 @@
 		A497A7BF25ADC483002608BE /* SwiftUICustomPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUICustomPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A497A7C325ADC483002608BE /* SwiftUICustomPlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICustomPlayerUITests.swift; sourceTree = "<group>"; };
 		A497A7C525ADC483002608BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A497A7D425ADC7DA002608BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A497A7D525ADC7DA002608BE /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		A497A7DE25ADC8F7002608BE /* HomeSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSwiftUIView.swift; sourceTree = "<group>"; };
+		A497A7E325ADC914002608BE /* MoreSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A479B89625ADE3BE00385B69 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A497A7A125ADC481002608BE /* AppDelegate.swift */,
+				A497A7A325ADC481002608BE /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
 		A497A79525ADC481002608BE = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +118,17 @@
 		A497A7A025ADC481002608BE /* SwiftUICustomPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				A497A7A125ADC481002608BE /* AppDelegate.swift */,
-				A497A7A325ADC481002608BE /* SceneDelegate.swift */,
+				A497A7DD25ADC866002608BE /* Tab */,
+				A497A7DC25ADC85C002608BE /* More */,
+				A497A7DB25ADC836002608BE /* Home */,
+				A479B89625ADE3BE00385B69 /* AppDelegate */,
 				A497A7A525ADC481002608BE /* ContentView.swift */,
 				A497A7A725ADC483002608BE /* Assets.xcassets */,
 				A497A7AC25ADC483002608BE /* LaunchScreen.storyboard */,
 				A497A7AF25ADC483002608BE /* Info.plist */,
 				A497A7A925ADC483002608BE /* Preview Content */,
+				A497A7D425ADC7DA002608BE /* ViewController.swift */,
+				A497A7D525ADC7DA002608BE /* ViewController.xib */,
 			);
 			path = SwiftUICustomPlayer;
 			sourceTree = "<group>";
@@ -134,6 +157,30 @@
 				A497A7C525ADC483002608BE /* Info.plist */,
 			);
 			path = SwiftUICustomPlayerUITests;
+			sourceTree = "<group>";
+		};
+		A497A7DB25ADC836002608BE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A497A7DE25ADC8F7002608BE /* HomeSwiftUIView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A497A7DC25ADC85C002608BE /* More */ = {
+			isa = PBXGroup;
+			children = (
+				A497A7E325ADC914002608BE /* MoreSwiftUIView.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		A497A7DD25ADC866002608BE /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				A479B89125ADDBE900385B69 /* TabViewSwiftUIView.swift */,
+			);
+			path = Tab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +288,7 @@
 			files = (
 				A497A7AE25ADC483002608BE /* LaunchScreen.storyboard in Resources */,
 				A497A7AB25ADC483002608BE /* Preview Assets.xcassets in Resources */,
+				A497A7D725ADC7DA002608BE /* ViewController.xib in Resources */,
 				A497A7A825ADC483002608BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +316,10 @@
 			files = (
 				A497A7A225ADC481002608BE /* AppDelegate.swift in Sources */,
 				A497A7A425ADC481002608BE /* SceneDelegate.swift in Sources */,
+				A479B89225ADDBE900385B69 /* TabViewSwiftUIView.swift in Sources */,
+				A497A7D625ADC7DA002608BE /* ViewController.swift in Sources */,
+				A497A7E425ADC914002608BE /* MoreSwiftUIView.swift in Sources */,
+				A497A7DF25ADC8F7002608BE /* HomeSwiftUIView.swift in Sources */,
 				A497A7A625ADC481002608BE /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
