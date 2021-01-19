@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A479B89225ADDBE900385B69 /* TabViewSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A479B89125ADDBE900385B69 /* TabViewSwiftUIView.swift */; };
+		A4860EDE25B70396003A9D3C /* AKVideoPlayerSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4860EDD25B70396003A9D3C /* AKVideoPlayerSwiftUIView.swift */; };
+		A4860EE525B7106A003A9D3C /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4860EE325B7106A003A9D3C /* VideoPlayerView.swift */; };
+		A4860EE625B7106A003A9D3C /* VideoPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4860EE425B7106A003A9D3C /* VideoPlayerView.xib */; };
+		A4860EEF25B726FC003A9D3C /* VideoPlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4860EEE25B726FC003A9D3C /* VideoPlayerControlsView.swift */; };
+		A4860EF725B7290E003A9D3C /* VideoPlayerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4860EF625B7290E003A9D3C /* VideoPlayerContainerView.swift */; };
 		A497A7A225ADC481002608BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497A7A125ADC481002608BE /* AppDelegate.swift */; };
 		A497A7A425ADC481002608BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497A7A325ADC481002608BE /* SceneDelegate.swift */; };
 		A497A7A625ADC481002608BE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497A7A525ADC481002608BE /* ContentView.swift */; };
@@ -41,6 +46,11 @@
 
 /* Begin PBXFileReference section */
 		A479B89125ADDBE900385B69 /* TabViewSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewSwiftUIView.swift; sourceTree = "<group>"; };
+		A4860EDD25B70396003A9D3C /* AKVideoPlayerSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKVideoPlayerSwiftUIView.swift; sourceTree = "<group>"; };
+		A4860EE325B7106A003A9D3C /* VideoPlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		A4860EE425B7106A003A9D3C /* VideoPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayerView.xib; sourceTree = "<group>"; };
+		A4860EEE25B726FC003A9D3C /* VideoPlayerControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerControlsView.swift; sourceTree = "<group>"; };
+		A4860EF625B7290E003A9D3C /* VideoPlayerContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerContainerView.swift; sourceTree = "<group>"; };
 		A497A79E25ADC481002608BE /* SwiftUICustomPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICustomPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A497A7A125ADC481002608BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A497A7A325ADC481002608BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +103,16 @@
 				A497A7A325ADC481002608BE /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		A4860EED25B726E2003A9D3C /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				A4860EEE25B726FC003A9D3C /* VideoPlayerControlsView.swift */,
+				A4860EDD25B70396003A9D3C /* AKVideoPlayerSwiftUIView.swift */,
+				A4860EF625B7290E003A9D3C /* VideoPlayerContainerView.swift */,
+			);
+			path = VideoPlayer;
 			sourceTree = "<group>";
 		};
 		A497A79525ADC481002608BE = {
@@ -162,7 +182,10 @@
 		A497A7DB25ADC836002608BE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A4860EED25B726E2003A9D3C /* VideoPlayer */,
 				A497A7DE25ADC8F7002608BE /* HomeSwiftUIView.swift */,
+				A4860EE325B7106A003A9D3C /* VideoPlayerView.swift */,
+				A4860EE425B7106A003A9D3C /* VideoPlayerView.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -289,6 +312,7 @@
 				A497A7AE25ADC483002608BE /* LaunchScreen.storyboard in Resources */,
 				A497A7AB25ADC483002608BE /* Preview Assets.xcassets in Resources */,
 				A497A7D725ADC7DA002608BE /* ViewController.xib in Resources */,
+				A4860EE625B7106A003A9D3C /* VideoPlayerView.xib in Resources */,
 				A497A7A825ADC483002608BE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,10 +341,14 @@
 				A497A7A225ADC481002608BE /* AppDelegate.swift in Sources */,
 				A497A7A425ADC481002608BE /* SceneDelegate.swift in Sources */,
 				A479B89225ADDBE900385B69 /* TabViewSwiftUIView.swift in Sources */,
+				A4860EEF25B726FC003A9D3C /* VideoPlayerControlsView.swift in Sources */,
 				A497A7D625ADC7DA002608BE /* ViewController.swift in Sources */,
 				A497A7E425ADC914002608BE /* MoreSwiftUIView.swift in Sources */,
+				A4860EF725B7290E003A9D3C /* VideoPlayerContainerView.swift in Sources */,
+				A4860EE525B7106A003A9D3C /* VideoPlayerView.swift in Sources */,
 				A497A7DF25ADC8F7002608BE /* HomeSwiftUIView.swift in Sources */,
 				A497A7A625ADC481002608BE /* ContentView.swift in Sources */,
+				A4860EDE25B70396003A9D3C /* AKVideoPlayerSwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

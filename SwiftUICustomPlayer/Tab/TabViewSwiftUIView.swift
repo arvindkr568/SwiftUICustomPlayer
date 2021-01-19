@@ -12,7 +12,7 @@ struct TabViewSwiftUIView: View {
         UITabBar.appearance().backgroundColor = UIColor.gray
     }
     
-    @State var selected = 1
+    @State var selected = 0
     var body: some View {
             TabView(selection: $selected) {
                 HomeSwiftUIView().tabItem({
@@ -48,7 +48,7 @@ struct Constants {
     }
     
     struct TabBarText {
-        static let tabBar0 = "Home"
+        static let tabBar0 = "Home1"
         static let tabBar1 = "More"
         static let tabBar2 = "Blog"
         static let tabBar3 = "Store"
