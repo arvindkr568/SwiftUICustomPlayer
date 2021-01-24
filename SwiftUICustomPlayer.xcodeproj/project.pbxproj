@@ -25,6 +25,7 @@
 		A497A7D725ADC7DA002608BE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A497A7D525ADC7DA002608BE /* ViewController.xib */; };
 		A497A7DF25ADC8F7002608BE /* HomeSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497A7DE25ADC8F7002608BE /* HomeSwiftUIView.swift */; };
 		A497A7E425ADC914002608BE /* MoreSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497A7E325ADC914002608BE /* MoreSwiftUIView.swift */; };
+		A4C530E725BDDDF000E39385 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C530E625BDDDF000E39385 /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		A497A7D525ADC7DA002608BE /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		A497A7DE25ADC8F7002608BE /* HomeSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSwiftUIView.swift; sourceTree = "<group>"; };
 		A497A7E325ADC914002608BE /* MoreSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreSwiftUIView.swift; sourceTree = "<group>"; };
+		A4C530E625BDDDF000E39385 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				A4860EEE25B726FC003A9D3C /* VideoPlayerControlsView.swift */,
 				A4860EDD25B70396003A9D3C /* AKVideoPlayerSwiftUIView.swift */,
 				A4860EF625B7290E003A9D3C /* VideoPlayerContainerView.swift */,
+				A4C530EB25BDDE2600E39385 /* Utility */,
 			);
 			path = VideoPlayer;
 			sourceTree = "<group>";
@@ -204,6 +207,14 @@
 				A479B89125ADDBE900385B69 /* TabViewSwiftUIView.swift */,
 			);
 			path = Tab;
+			sourceTree = "<group>";
+		};
+		A4C530EB25BDDE2600E39385 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A4C530E625BDDDF000E39385 /* Utility.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +357,7 @@
 				A497A7E425ADC914002608BE /* MoreSwiftUIView.swift in Sources */,
 				A4860EF725B7290E003A9D3C /* VideoPlayerContainerView.swift in Sources */,
 				A4860EE525B7106A003A9D3C /* VideoPlayerView.swift in Sources */,
+				A4C530E725BDDDF000E39385 /* Utility.swift in Sources */,
 				A497A7DF25ADC8F7002608BE /* HomeSwiftUIView.swift in Sources */,
 				A497A7A625ADC481002608BE /* ContentView.swift in Sources */,
 				A4860EDE25B70396003A9D3C /* AKVideoPlayerSwiftUIView.swift in Sources */,

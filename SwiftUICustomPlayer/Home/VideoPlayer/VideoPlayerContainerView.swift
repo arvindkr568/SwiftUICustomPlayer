@@ -28,15 +28,8 @@ struct VideoPlayerContainerView : View {
     var body: some View {
         VStack {
             ZStack {
-            AKVideoPlayerSwiftUIView(player: player, frame: frame).frame(minWidth: 0, maxWidth: .infinity,  minHeight: frame.height, maxHeight: frame.height, alignment: .top)
-            VideoPlayerControlsView(videoPos: $videoPos,
-                                    videoDuration: $videoDuration,
-                                    seeking: $seeking,
-                                    player: player).frame(minWidth: 20, maxWidth: 40,  minHeight: 40, maxHeight: 40, alignment: .center)
-                VideoPlayerControlsView(videoPos: $videoPos,
-                                        videoDuration: $videoDuration,
-                                        seeking: $seeking,
-                                        player: player).frame(minWidth: 20, maxWidth: 40,  minHeight: 40, maxHeight: 40, alignment: .center)
+                AKVideoPlayerSwiftUIView(videoPos: $videoPos, videoDuration: $videoDuration, seeking: $seeking, player: player, frame: frame).frame(minWidth: 0, maxWidth: .infinity,  minHeight: frame.height, maxHeight: frame.height, alignment: .top)
+            VideoPlayerControlsView(videoPos: $videoPos, videoDuration: $videoDuration, seeking: $seeking, player: player, frame: frame)
             }.zIndex(1)
             
         }
