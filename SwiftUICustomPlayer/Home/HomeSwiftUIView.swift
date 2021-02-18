@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeSwiftUIView: View {
     var body: some View {
         //Text("Hello, Home view!")
-        Color.gray.ignoresSafeArea(.all) // Ignore just for the color
+        Color.yellow.ignoresSafeArea(.all) // Ignore just for the color
         .overlay(
             VStack {
                let url = URL(string: "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8")!

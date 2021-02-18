@@ -17,19 +17,23 @@ struct VideoPlayerContainerView : View {
     // Whether we're currently interacting with the seek bar or doing a seek
     @State private var seeking = false
     
+    @State private var videoHeight: CGFloat = 200
     private let player: AVPlayer
     private var frame: CGRect
   
     init(url: URL, frame: CGRect) {
         self.frame = frame
         player = AVPlayer(url: url)
+        self.videoHeight = CGFloat(frame.height)
+//        $videoHeight.wrappedValue = CGFloat(frame.height)
     }
   
     var body: some View {
         VStack {
             ZStack {
-                AKVideoPlayerSwiftUIView(videoPos: $videoPos, videoDuration: $videoDuration, seeking: $seeking, player: player, frame: frame).frame(minWidth: 0, maxWidth: .infinity,  minHeight: frame.height, maxHeight: frame.height, alignment: .top)
-            VideoPlayerControlsView(videoPos: $videoPos, videoDuration: $videoDuration, seeking: $seeking, player: player, frame: frame)
+                AKVideoPlayerSwiftUIView(videoPos: $videoPos, videoDuration: $videoDuration, seeking: $seeking, player: player, frame: frame).frame(minWidth: 0, maxWidth: .infinity,  minHeight: $videoHeight.wrappedValue, maxHeight: $videoHeight.wrappedValue, alignment: .top)
+                VideoPlayerControlsView(videoPos: $videoPos, videoDuration: $videoDuration, seeking: $seeking, videoHeight: $videoHeight, player: player, frame: frame)
+                
             }.zIndex(1)
             
         }

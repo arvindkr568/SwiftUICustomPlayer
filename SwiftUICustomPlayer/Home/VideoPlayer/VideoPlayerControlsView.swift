@@ -12,12 +12,14 @@ struct VideoPlayerControlsView : View {
     @Binding private(set) var videoPos: Double
     @Binding private(set) var videoDuration: Double
     @Binding private(set) var seeking: Bool
+    @Binding private(set) var videoHeight: CGFloat
     
     let player: AVPlayer
     
     @State private var playerPaused = true
     let frame: CGRect
     let stripHeight = CGFloat(25.0)
+    @State var fullScreen: Bool = false
     
     var body: some View {
   
@@ -66,6 +68,16 @@ struct VideoPlayerControlsView : View {
     
     private func enlarzeClicked () {
         print("full screen icon clicked")
+        toggleFullScreen()
+    }
+    
+    private func toggleFullScreen() {
+        if fullScreen {
+            $videoHeight.wrappedValue = CGFloat(200)
+        } else {
+            $videoHeight.wrappedValue = UIScreen.screenHeight
+        }
+        self.fullScreen = !fullScreen
     }
     
     private func togglePlayPause() {
